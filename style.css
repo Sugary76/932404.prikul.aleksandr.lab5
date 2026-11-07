@@ -329,6 +329,11 @@ a:focus {
         max-width: 100%;
     }
 
+    .game-card {          
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
     .stats-grid {
         grid-template-columns: 1fr;
     }
@@ -358,7 +363,7 @@ body[data-theme="light"] {
     --card-bg: #ffffff;
     --text-color: #2a2438;
     --heading-color: #6b21a8;
-    --accent-color: #15803d;
+    --accent-color: #165f32;
     --danger-color: #b91c1c;
 }
 
@@ -447,7 +452,7 @@ body[data-theme="light"] a:active {
 .game-rating {
     margin: 0;
     font-size: 1.1rem;
-    letter-spacing: 2px;
+    font-weight: bold;
     color: var(--accent-color);
 }
 

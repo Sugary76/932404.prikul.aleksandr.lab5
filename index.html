@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Прикуль Александр 932404. Лабораторная 3. Вариант 5: Геймер и разработчик игр</title>
+    <title>Прикуль Александр 932404. Лабораторная 5. Вариант 5: Геймер и разработчик игр</title>
     <link rel="stylesheet" href="style.css">
     <style>
         textarea{
@@ -22,6 +22,7 @@
             <li><a href="#projects">Проекты</a></li>
             <li><a href="#genres">Жанры</a></li>
             <li><a href="#stats">Статистика</a></li>
+            <li><a href="#games">Игры</a></li>
             <li><a href="#contact">Контакты</a></li>
         </ul>
     </nav>
@@ -115,8 +116,8 @@
         <button class="toggle-content" type="button" data-target="games-content">Скрыть</button>
         <div id="games-content" class="section-content">
             <div class="games-controls">
-                <button if="add-game" type="button"> Добавить игру</button>
-                <button if="remove-last" type="button"> Удалить последнюю</button>
+                <button id="add-game" type="button">Добавить игру</button>
+                <button id="remove-last" type="button">Удалить последнюю</button>
             </div>
             <p id="games-counter">Всего игр в списке: 0</p>
             <div id="games-container" class="games-container">
