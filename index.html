@@ -25,6 +25,7 @@
             <li><a href="#contact">Контакты</a></li>
         </ul>
     </nav>
+    <button id="theme-toggle" type="button">Смена темы</button>
 </header>
 
 <main>
@@ -33,14 +34,17 @@
     
     <section id="skills">
         <h2>Навыки</h2>
-        <ul>
-            <li>Понимание игровых механик и баланса</li>
-            <li>Работа с физикой и коллизиями</li>
-            <li>Проектирование уровней</li>
-            <li>Анимация персонажей и объектов</li>
-            <li>Звуковой дизайн и музыка</li>
-            <li>Понимание жанров и трендов индустрии</li>
-        </ul>
+        <button class="toggle-content" type="button" data-target="skills-content">Скрыть</button>
+        <div id="skills-content" class="section-content">
+            <ul>
+                <li>Понимание игровых механик и баланса</li>
+                <li>Работа с физикой и коллизиями</li>
+                <li>Проектирование уровней</li>
+                <li>Анимация персонажей и объектов</li>
+                <li>Звуковой дизайн и музыка</li>
+                <li>Понимание жанров и трендов индустрии</li>
+            </ul>
+        </div>
     </section>
 
     <section id="projects">
@@ -87,22 +91,40 @@
 
     <section id="stats">
         <h2>Статистика игрового времени</h2>
-        <div class="stats-grid">
-            <div class="stat-item">
-                <div class="stat-number">3500+</div>
-                <div class="stat-label">Часов в RPG</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">750+</div>
-                <div class="stat-label">Побед в шутерах</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">4000+</div>
-                <div class="stat-label">Пройденных квестов</div>
+        <button class="toggle-content" type="button" data-target="stats-content">Скрыть</button>
+        <div id="stats-content" class="section-content">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">3500+</div>
+                    <div class="stat-label">Часов в RPG</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">750+</div>
+                    <div class="stat-label">Побед в шутерах</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4000+</div>
+                    <div class="stat-label">Пройденных квестов</div>
+                </div>
             </div>
         </div>
     </section>
 
+    <section id="games">
+        <h2>Любимые игры с рейтингом</h2>
+        <button class="toggle-content" type="button" data-target="games-content">Скрыть</button>
+        <div id="games-content" class="section-content">
+            <div class="games-controls">
+                <button if="add-game" type="button"> Добавить игру</button>
+                <button if="remove-last" type="button"> Удалить последнюю</button>
+            </div>
+            <p id="games-counter">Всего игр в списке: 0</p>
+            <div id="games-container" class="games-container">
+
+            </div>
+        </div>
+    </section>
+    
     <aside>
         <h2>Моя любимая игровая платформа</h2>
         <p>ПК</p>
